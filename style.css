@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #8e0c53;
+    position: sticky;
+   
+    color: #fff;
+    top: 0;
+    z-index: 1000;
+   
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap: 30px;
+    padding: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+}
+nav a:hover{
+    color: #e588bf;
+    text-decoration: none;
+
+}
+.parallax{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+   
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center;
+    
+    scroll-margin-top: 70px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    line-height: 1.8;
+    font-size: 22px;
+    color: #6d0840;
+    gap: 25px;
+}
+#Home{
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.15),
+                        rgba(255, 255, 255, 0.15)),
+                        url("images/home.png");
+    
+}
+span{
+    color: #c41e79;
+}
+#About{
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.15),
+                        rgba(255, 255, 255, 0.15)),
+                        url("images/about.png");
+    
+}
+#About p{
+    max-width: 750px;
+     
+}
+#Projects{
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.15),
+                        rgba(255, 255, 255, 0.15)),
+                        url("images/projects.png");
+    
+}
+.project-container{
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+
+}
+.project-card{
+    background-color: #a80e62 ;
+    display: flex;
+    flex-direction: column;
+    border-top: 8px solid #e588bf;
+    border-radius: 20px;
+    height:300px;
+    width:400px;
+    color:  #f7cfe5;
+    text-align: start;
+    padding: 10px;
+    transition: all 0.6s ease-in-out;
+}
+.project-card:hover{
+    transform: translateY(-8px);
+
+}
+.project-card h3{
+    color: #fff;
+}
+#Skills{
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.15),
+                        rgba(255, 255, 255, 0.15)),
+                        url("images/skills.png");
+    
+}
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:50px;
+
+}
+.skill-card{
+    background-color: #f4b0d8;
+    border-left:5px solid #e979b7 ;
+    border-radius: 12px;
+    padding: 5px;
+    transition: all 0.8s ease-in-out;
+   
+
+
+}
+.skill-card:hover{
+     transform: translateX(-10px);
+}
+#Certifications{
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.15),
+                        rgba(255, 255, 255, 0.15)),
+                        url("images/certifications.png");
+    
+}
+
+.cer-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 25px;
+}
+
+.cer-card {
+    grid-column: span 2;
+}
+
+.cer-card:nth-last-child(2) {
+    grid-column: 2 / span 2;
+}
+
+.cer-card:last-child {
+    grid-column: 4 / span 2;
+}
+.cer-card{
+     background-color: #f9c2e8;
+    
+     border-radius: 10px;
+     height:250px;
+     width:450px;
+     padding: 15px;
+    transition: all 0.6s ease-in-out;
+}
+.cer-card:hover{
+      transform: translateX(-8px);
+}
+img{
+    height:100px;
+    width: 200px;
+    background-position: center;
+    background-image: cover;
+
+}
+#Certifications p{
+    font-size: 18px;
+}
+
+#Education{
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.45),
+                        rgba(255, 255, 255, 0.45)),
+                        url("images/education.png");
+    
+}
+.edu-container{
+    background-color:rgb(251, 113, 161) ;
+    color: #fff;
+    height:400px;
+    width:400px;
+    border-radius: 20px;
+    border-top: 8px solid #f8cfe7;
+    border-left: 8px solid #f8cfe7;
+
+}
+hr{
+    width:200px;
+    margin-left: 100px;
+    gap:20px;
+}
+.edu-container h5{
+    color: #6d0840;
+    font-size: 25px;
+}
+.edu-container p{
+    font-size: 22px;
+}
+
+#Contact{
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.15),
+                        rgba(255, 255, 255, 0.15)),
+                        url("images/contact.png");
+    
+}
+.icon{
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s ease;
+
+}
+.email{
+    background-color: #dc318f;
+    height: 60px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap:30px;
+    border-radius: 50px;
+    padding:5px;
+}
+.icon:hover{
+      transform: translateY(-5px);
+      background-color: #e588bf;
+
+}
+a{
+
+    color:  #6d0840;
+    cursor:pointer;
+}
+.email p{
+    color: #fff;
+}
+footer{
+    height: 50px;
+    
+    background-color: #6d0840;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+@media (max-width: 1024px) {
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .cer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cer-card,
+    .cer-card:nth-last-child(2),
+    .cer-card:last-child {
+        grid-column: auto;
+        width: 100%;
+    }
+
+    .edu-container {
+        width: 90%;
+    }
+}
+@media (max-width: 768px) {
+
+    .parallax {
+        min-height: 100vh;
+        background-attachment: scroll;
+        padding: 30px 15px;
+    }
+
+    .content {
+        font-size: 18px;
+        gap: 20px;
+        width: 100%;
+    }
+
+    nav {
+        gap: 12px;
+        padding: 15px 5px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .project-card {
+        width: 100%;
+        height: auto;
+        min-height: 250px;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        width: 100%;
+    }
+
+    .cer-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .cer-card,
+    .cer-card:nth-last-child(2),
+    .cer-card:last-child {
+        grid-column: auto;
+        width: 100%;
+        height: auto;
+        min-height: 220px;
+    }
+
+    .edu-container {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .edu-container p {
+        font-size: 17px;
+    }
+
+    .email {
+        max-width: 100%;
+    }
+
+    footer {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+@media (max-width: 480px) {
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .content {
+        font-size: 16px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-card {
+        width: 100%;
+    }
+
+    .project-card {
+        padding: 15px;
+    }
+
+    .cer-card {
+        padding: 12px;
+    }
+
+    .edu-container h5 {
+        font-size: 20px;
+    }
+
+    .edu-container p {
+        font-size: 15px;
+    }
+
+    .email {
+        width: 100%;
+        gap: 15px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}
+/* Tablet and iPad */
+@media (max-width: 1100px) {
+
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 15px;
+    }
+
+    .project-card {
+        width: 100%;
+        height: auto;
+        min-height: 250px;
+    }
+}
+
+/* Only Tablets and iPads */
+@media (min-width: 768px) and (max-width: 1100px) {
+
+    .cer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .cer-card,
+    .cer-card:nth-last-child(2),
+    .cer-card:last-child {
+        grid-column: auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
